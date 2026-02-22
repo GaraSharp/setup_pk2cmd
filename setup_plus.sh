@@ -1,6 +1,6 @@
 echo "*** get files ! "
 wget http://ww1.microchip.com/downloads/en/DeviceDoc/PICkit2_PK2CMD_WIN32_SourceV1-21_RC1.zip
-#wget https://web.archive.org/web/20201128020840/http://www.microchip.com/forums/download.axd?file=0;749972
+curl 'https://web.archive.org/web/20201128020840/http://www.microchip.com/forums/download.axd?file=0;749972' -o PK2DeviceFile.zip 
 wget -O pk2_devicefile_osfile_paths.patch https://aur.archlinux.org/cgit/aur.git/plain/pk2_devicefile_osfile_paths.patch?h=pk2cmd-plus
 wget -O 60-pickit2.rules https://aur.archlinux.org/cgit/aur.git/plain/60-pickit2.rules?h=pk2cmd-plus
 
